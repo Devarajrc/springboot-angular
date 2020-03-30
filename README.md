@@ -40,6 +40,7 @@ http://localhost:8090/item/items   (Get request )
 
 
 In Angular
+
 ng serve --open
-In Browser
-localhost:4200
+
+In Browser : localhost:4200
