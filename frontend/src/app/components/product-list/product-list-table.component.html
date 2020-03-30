@@ -1,0 +1,41 @@
+<table class="table">
+
+    <thead class="thead-dark">
+        <tr>
+            
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Units in Stock</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempProduct of products12">
+            
+            <td class="align-middle">{{ tempProduct.itemName}}</td>
+            <td class="align-middle">{{ tempProduct.price}}</td>
+            <td class="align-middle">
+                <!-- <input type="text"  [(ngModel)]=quantity> -->
+
+            </td>
+            <td class="align-middle">{{ tempProduct.count}}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+        <tr>
+            
+           <td></td>
+            <td >
+                <button type="button" (click)="getbill()" class="btn btn-primary">Calculate</button>
+            </td>
+
+            <td >
+                <span class="label label-default">{{toalbill}}</span>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
